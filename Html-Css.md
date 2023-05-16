@@ -28,7 +28,7 @@ avec notre première page html qui devrais ressembler a quelque chose comme ça 
 Le html est un langage dit de balisage (dit descriptif de donnée)
 il nous permet de définir les diffèrent bloc de notre page web.
 
-![Bloc html](./Balise-de-base.png "Blocs html")
+![Bloc html](./assets/Balise-de-base.png "Blocs html")
 
 - La balise en detaille.
 
