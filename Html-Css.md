@@ -117,21 +117,21 @@ Un élément de type inline ne peut pas contenir d’éléments de type block
 
 ### Pour resumer :
 
-** propriété display **
+**propriété display**
 
 - block :
         prend toute la largeur de l'ecran , retourne à la ligne 
         hauteur et largeur modifiable , peut contenir d'autre éléments block et inline
-        ex: <div>,<p>
+        ex: ```<div>,<p>```
 
 - inline :
         espace minimum , se suivent l'un derrière l'autre
         hauteur et largeur mnon modifiables et ne peut contenir
-        ex: <span>
+        ex: ```<span>```
 
 - inline-block :
         comme inline mais on peut modifier hauteur et largeur
-        ex: <img>
+        ex:```<img>```
 
 - none :
         l'élément n'est pas du tout affiché ( ni même visible)
