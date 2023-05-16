@@ -376,6 +376,7 @@ Analyser, comparer les 2 versions desktop et mobile d'un site avec l’inspecteu
 ![Inspecter selectionnant le type d'ecran](./assets/responsive-inspector.png "inspecteur navigation responsive")
 
 **remarque balise meta**
+
 ``` 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
@@ -402,6 +403,7 @@ initial-scale=1 : force le zoom à être de 100% au chargement de la page
 	/*etc.*/
 }
 ```
+
 Dans cet exemple nous avons :
     une carte dont la taille varie mais entre deux limites fixes .
 
@@ -429,6 +431,7 @@ font-size: min(3vw, 35px);
         note : par défaut html possède une font-size de 16px
         Utile dans les media queries : changer la font-size de html en pourcentage (voir plus loin)
         ex:
+
         ```
         html {
             font-size: 16px;
@@ -440,11 +443,13 @@ font-size: min(3vw, 35px);
 
         }
         ```
+
 - l'unité de mesure em :
         L’unité em fait référence à la taille de la police du parent 
         Si aucun parent n’a de taille de font définie alors 1em vaudra la taille de l'élément root, donc 16px
         Peut être utilisé pour dimensionner autre chose qu’une police
         pratique pour dimensionner la police de tout une portion du site, typiquement une section, pour laquelle la taille sera définie puis héritée par tous ses enfants
+
         ```
         .card {
             font-size: 20px;
@@ -454,6 +459,7 @@ font-size: min(3vw, 35px);
             font-size: 2em; /* équivalent à 40px */
         }
         ```
+
 - media queries
         Il existe en CSS des propriétés appelées média queries qui permettent de changer le CSS en fonction (entre autres) de la largeur de l’écran
 
@@ -469,6 +475,7 @@ font-size: min(3vw, 35px);
         }
 
         ```
+
     ref : https://www.w3schools.com/css/css3_mediaqueries.asp
 
 [Exemple responsive](https://codepen.io/Michamp/pen/OJQwBby)
