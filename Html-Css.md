@@ -516,3 +516,250 @@ Comme on l’a vu, flexbox permet de facilement aligner des éléments en rangé
 ```
 
 
+### Exercice 
+
+Reprenons notre site avec les differentes cartes et rendons le responsive avec les technique vues plus haut ( media queries , flexbox/grid , max/min width/height )
+
+
+## Les couleurs et images
+
+```
+/*sans transparence*/
+color:  #FF0000;
+color:  rgb(255, 0, 0);
+color:  hsl(0,100,50);
+color:  lightpink;
+
+/*avec transparence*/
+color:  #FFAB3467;
+color:  rgba(255, 32, 12, 0.5);
+color:  hsla(255, 12, 67, 0.4);
+
+```
+
+[Exemple transparence](https://codepen.io/Michamp/pen/ExQdeRy)
+
+[Liste couleurs nommées prédéfinies](https://www.w3schools.com/colors/colors_names.asp)
+
+### Les gradient / dégradé 
+
+Les gradients permettent d’afficher un dégradé de couleurs en arrière-plan. 
+Un léger gradient change beaucoup l’aspect général d’une page (fait moins amateur, comme la présence de petits border-radius).
+
+Exemple :
+
+```
+background: linear-gradient(139deg, rgba(35,36,0,1) 0%, rgba(72,145,40,1) 14%, rgba(73,144,36,1) 34%, rgba(0,11,255,0.8561799719887955) 100%);
+```
+Quelque site sympas pour les couleurs et dégradés 
+
+- [generateur de palette et outils de nuance de couleurs](https://coolors.co/)
+- [generateur de dégradé](https://cssgradient.io/)
+- [generateur de dégradé](https://www.colorzilla.com/gradient-editor/)
+- [generateur d'effet vitrine](https://css.glass/)
+
+
+### Mettre une image en background d’un container
+
+propriétés importantes :
+
+- background-image : source de l’image
+- background-repeat : définit s’il faut répéter l’image sur les parties qui dépassent
+- background-size : spécifie comment insérer l’image dans le container => MDN
+
+**Rem : mettre une image en backgound d’une div est souvent plus facile pour manipuler les images sur une page. On déforme les dimensions de la div mais PAS celles de l’image.**
+
+[Exemple](https://codepen.io/Michamp/pen/LYQgoKX)
+
+
+### Exercice 
+
+Rajouter dans votre projet d’hier :
+des couleurs avec transparence
+au moins un gradient (très léger c’est ok)
+une ou des images en background de certains éléments (ex: body, carte, section, header…)
+
+
+## Les transitions et animations CSS
+
+**propriété transition**
+
+```
+<div class="box"></div>
+
+```
+
+```
+.box {
+  height: 100px;
+  width: 200px;
+  border: 2px solid black;
+  background-color: red;
+  /*add a transition :*/
+  transition: transform 2s;
+}
+
+.box:hover {
+  transform: translateX(100%);
+}
+```
+
+**Rem: on écrit transition dans l’élément qui la subit, PAS dans ce qui la déclenche (pas dans le :hover)**
+
+[pseudo classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
+
+[Exemple](https://codepen.io/Michamp/pen/MWQPzoG)
+
+
+```
+transition: transform  2s ease-in-out 3s;
+```
+
+```
+transition-property: transform;
+transition-duration: 1s;
+transition-timing-function: ease-in-out;
+transition-delay: 3s;
+```
+
+[Transition W3school](https://www.w3schools.com/css/css3_transitions.asp)
+
+[Transition Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+
+### Exercice
+Trouver une transition intéressante sur codepen et l’implémenter sur votre site
+
+
+### animations CSS
+
+[Changer le background color avec une animation : ](https://codepen.io/Michamp/pen/RwQezXo)
+
+**Rem: on écrit animation dans ce qui la déclenche, PAS dans l’élément lui même (contraire de transition)**
+
+```
+.box {
+  height: 200px;
+  width: 400px;
+  border: 2px solid black;
+  background-color: red;
+  margin: 20px auto;
+  animation: bg-color-animation 5s linear infinite;
+
+}
+
+@keyframes bg-color-animation {
+  0% {
+    background-color: red;
+  }
+  20%{
+    background-color: blue;
+  }
+  80%{
+    background-color: yellow;
+  }
+  100%{
+    background-color: red;
+  }
+}
+```
+
+- animation-name : le nom que l’on donne à l’animation
+- animation-duration : sa durée
+- animation-iteration-count : le nombre de répétition (ex: 3, infinite)
+- animation-timing-function : la fonction de easing (ex: ease-in-out )
+- animation-fill-mode : spécifie le comportement avant ou après l’animation (ex: forwards)
+- animation-direction : spécifie le comportement entre 2 cycles (ex: alternate)
+
+[Animations w3school](https://www.w3schools.com/css/css3_animations.asp)
+
+[Animations w3school](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+
+### Exercice
+
+Implémentez au moins une animation dans votre site.
+
+Soit vous l’inventez vous même, de A à Z.
+Soit vous trouvez une animation qui vous plait sur codepen et vous la modifiez pour en faire quelque chose de vraiment personnel
+
+
+### Pseudo classes
+
+Une pseudo-classe est un mot-clé qui peut être ajouté à un sélecteur afin d'indiquer l'état spécifique dans lequel l'élément doit être pour être ciblé par la déclaration.
+```
+selector:pseudo-class {
+  property: value;
+}
+```
+[Source : ](https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes)
+
+
+**Ex:**
+        - :link		cible un lien non visité
+        - :visited	cible un lien déjà visité
+        - :hover	cible un élément survolé par la souris
+        - :active	cible un élément activé par l'utilisateur. (permet de simuler un clic, "court")
+        - :focus	cible un élément dans le focus (permet de simuler un clic, "long")
+
+### Pseudo elements 
+
+Un pseudo-élément est un mot-clé ajouté à un sélecteur qui permet de mettre en forme certaines parties de l'élément ciblé par la règle.
+
+```
+selector::pseudo-element {
+  property: value;
+}
+```
+[Source : ](https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-elements)
+
+**Ex:**
+- ::before	créée un pseudo élément avant le contenu de l'élément ciblé     (souvent combiné avec content)
+- ::after       créée un pseudo élément dernier le contenu de l'élément ciblé   (souvent combiné avec content)
+Ceux-ci sont les 2 plus utilisés, mais il en existe d'autres :
+
+- ::first-line 	cible la première ligne d'un élément
+- ::selection 	cible la portion du document sélectionnée par l'utilisateur
+- ect
+
+```
+div::before {
+        content: "before";
+}
+div::after {
+        content: "after";
+}
+
+```
+
+```
+<div>
+before
+<!-- reste du contenu de la div -->
+after
+</div>
+```
+
+[Exemple codepen](https://codepen.io/Michamp/pen/VwQqXjV)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Reference pour le css](https://cssreference.io/)
