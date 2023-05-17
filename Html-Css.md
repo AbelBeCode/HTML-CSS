@@ -33,15 +33,31 @@ avec notre première page html qui devrais ressembler a quelque chose comme ça 
 Le html est un langage dit de balisage (dit descriptif de donnée)
 il nous permet de définir les diffèrent bloc de notre page web.
 
-![Bloc html](./assets/Balise-de-base.png "Blocs html")
+```html
+<p> Ceci est un paragraphe </p>
+<a href="https://www.google.com">Ceci est un lien </a>
+<!-- La ligne suivante montre une image: -->
+<img src="http://www.image.com/image.png">
+```
 
 - La balise en detaille.
 
-![Balise de plus pres](./assets/Balise-detaille.png "balise de plus pres")
+```html
+<tag attribute="value">contenu</tag>
+```
 
 - Et voici la structure indispensable a une page web.
 
-![structure html de base](./assets/structure-fonctionnel.png "structure html de base")
+```html
+<html>
+        <head>
+        <!-- Contenu du head -->
+        </head>
+        <body>
+        <!-- Contenu du body -->
+        </body>
+</html>
+```
 
 ## Exercice : 
 
