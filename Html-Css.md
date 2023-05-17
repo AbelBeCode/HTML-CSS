@@ -423,58 +423,58 @@ font-size: min(3vw, 35px);
 ```
 
 - l'unité de mesure rem : 
-        Il existe une unité de longueur qui est la taille de la police dans l’élément html, c’est rem. 
-        Utile pour l’accessibilité :  modifier la taille des polices (méthode de 62.5%) => exemple
-        Peut être utilisé pour dimensionner autre chose qu’une police
-        note : par défaut html possède une font-size de 16px
-        Utile dans les media queries : changer la font-size de html en pourcentage (voir plus loin)
-        ex:
+Il existe une unité de longueur qui est la taille de la police dans l’élément html, c’est rem. 
+Utile pour l’accessibilité :  modifier la taille des polices (méthode de 62.5%) => exemple
+Peut être utilisé pour dimensionner autre chose qu’une police
+note : par défaut html possède une font-size de 16px
+Utile dans les media queries : changer la font-size de html en pourcentage (voir plus loin)
+ex:
 
-        ```css
-        html {
-            font-size: 16px;
-        }
+```css
+html {
+        font-size: 16px;
+}
 
-        .card {
+.card {
 
-            font-size: 2rem; /* équivalent à 2*16 = 32px */
+        font-size: 2rem; /* équivalent à 2*16 = 32px */
 
-        }
-        ```
+}
+```
 
 - l'unité de mesure em :
-        L’unité em fait référence à la taille de la police du parent 
-        Si aucun parent n’a de taille de font définie alors 1em vaudra la taille de l'élément root, donc 16px
-        Peut être utilisé pour dimensionner autre chose qu’une police
-        pratique pour dimensionner la police de tout une portion du site, typiquement une section, pour laquelle la taille sera définie puis héritée par tous ses enfants
+L’unité em fait référence à la taille de la police du parent 
+Si aucun parent n’a de taille de font définie alors 1em vaudra la taille de l'élément root, donc 16px
+Peut être utilisé pour dimensionner autre chose qu’une police
+pratique pour dimensionner la police de tout une portion du site, typiquement une section, pour laquelle la taille sera définie puis héritée par tous ses enfants
 
-        ```css
-        .card {
-            font-size: 20px;
-        }
-        .card p {
+```css
+.card {
+        font-size: 20px;
+}
+.card p {
 
-            font-size: 2em; /* équivalent à 40px */
-        }
-        ```
+        font-size: 2em; /* équivalent à 40px */
+}
+```
 
 - media queries
-        Il existe en CSS des propriétés appelées média queries qui permettent de changer le CSS en fonction (entre autres) de la largeur de l’écran
+Il existe en CSS des propriétés appelées média queries qui permettent de changer le CSS en fonction (entre autres) de la largeur de l’écran
 
-        ```css
-        /* Si la largeur est entre 600px et 900px OU au dessus de 1100px - changer l’apparence de la div */
-        @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
-            div.example {
-                font-size: 50px;
-                padding: 50px;
-                border: 8px solid black;
-                background: yellow;
-                }
+```css
+/* Si la largeur est entre 600px et 900px OU au dessus de 1100px - changer l’apparence de la div */
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+        div.example {
+        font-size: 50px;
+        padding: 50px;
+        border: 8px solid black;
+        background: yellow;
         }
+}
 
-        ```
+```
 
-    ref : https://www.w3schools.com/css/css3_mediaqueries.asp
+ref : https://www.w3schools.com/css/css3_mediaqueries.asp
 
 [Exemple responsive](https://codepen.io/Michamp/pen/OJQwBby)
 
