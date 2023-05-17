@@ -181,7 +181,7 @@ Un élément de type inline ne peut pas contenir d’éléments de type block
 
 ### Liste des balises utilisées 
 
-``` 
+```html
 <html>      <head>      <body>
 <meta>      <link>      <nav>
 <p>         <a>         <q>
@@ -194,8 +194,7 @@ Un élément de type inline ne peut pas contenir d’éléments de type block
 
 ### Liste des proprièté CSS 
 
-```
-
+```css
 display
 color
 background-color
@@ -205,7 +204,6 @@ border
 width
 height
 box-sizing
-
 ```
 
 Ref pour les differentes balises et proprieté css :
@@ -233,14 +231,14 @@ N’hésitez pas à Googler ou chercher directement sur Youtube des mots clés
 
 - Sélectionner une balise
 
-``` 
+```css
 p {
 	color:  red;
 }
 ```
 - Sélectionner une classe
 
-```
+```css
 .boite {
 	display: inline-block;
 }
@@ -248,13 +246,13 @@ p {
 
 - Sélectionner un id
 
-``` 
+```css
 #box-important {
 	color: red;
 }
 ```
 - Sélectionner par référence à un parent
-```
+```css
 .box1 .box2 {
 	color: red;
 }
@@ -262,7 +260,7 @@ p {
 
 - Sélectionner un élément dans un autre
 
-``` 
+```css
 .box1 > .box2 {
 	color: red;
 }
@@ -270,7 +268,7 @@ p {
 
 - Pseudo sélecteur de survol d’un élément
 
-``` 
+``` css
 p:hover{
     background-color:red;
 }
@@ -395,7 +393,7 @@ initial-scale=1 : force le zoom à être de 100% au chargement de la page
 
 **utilisation de max-width et min-width**
 
-``` 
+```css
 .card {
 	width:  70%;
 	min-width: 500px;
@@ -418,7 +416,7 @@ Reprendre le code avec les cartes et le rendre responsive au sens que l’on vie
 
 ## responsive fonts
 
-```
+```css
 font-size: 5vw; /* proportionnel à la LARGEUR! du navigateur*/
 font-size: max(3vw, 35px);
 font-size: min(3vw, 35px);
@@ -432,7 +430,7 @@ font-size: min(3vw, 35px);
         Utile dans les media queries : changer la font-size de html en pourcentage (voir plus loin)
         ex:
 
-        ```
+        ```css
         html {
             font-size: 16px;
         }
@@ -450,7 +448,7 @@ font-size: min(3vw, 35px);
         Peut être utilisé pour dimensionner autre chose qu’une police
         pratique pour dimensionner la police de tout une portion du site, typiquement une section, pour laquelle la taille sera définie puis héritée par tous ses enfants
 
-        ```
+        ```css
         .card {
             font-size: 20px;
         }
@@ -463,7 +461,7 @@ font-size: min(3vw, 35px);
 - media queries
         Il existe en CSS des propriétés appelées média queries qui permettent de changer le CSS en fonction (entre autres) de la largeur de l’écran
 
-        ```
+        ```css
         /* Si la largeur est entre 600px et 900px OU au dessus de 1100px - changer l’apparence de la div */
         @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
             div.example {
@@ -499,7 +497,7 @@ https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-stan
 Comme on l’a vu, flexbox permet de facilement aligner des éléments en rangées ou colonnes. On peut l’utiliser pour facilement passer d’un alignement en rangées à un alignement en colonnes en utilisant une media query.
 
 
-```
+```css
 .container {
 	display: flex;
 	/*default value :*/
@@ -523,7 +521,7 @@ Reprenons notre site avec les differentes cartes et rendons le responsive avec l
 
 ## Les couleurs et images
 
-```
+```css
 /*sans transparence*/
 color:  #FF0000;
 color:  rgb(255, 0, 0);
@@ -548,7 +546,7 @@ Un léger gradient change beaucoup l’aspect général d’une page (fait moins
 
 Exemple :
 
-```
+```css
 background: linear-gradient(139deg, rgba(35,36,0,1) 0%, rgba(72,145,40,1) 14%, rgba(73,144,36,1) 34%, rgba(0,11,255,0.8561799719887955) 100%);
 ```
 Quelque site sympas pour les couleurs et dégradés 
@@ -584,12 +582,12 @@ une ou des images en background de certains éléments (ex: body, carte, section
 
 **propriété transition**
 
-```
+```html
 <div class="box"></div>
 
 ```
 
-```
+```css
 .box {
   height: 100px;
   width: 200px;
@@ -611,11 +609,11 @@ une ou des images en background de certains éléments (ex: body, carte, section
 [Exemple](https://codepen.io/Michamp/pen/MWQPzoG)
 
 
-```
+```css
 transition: transform  2s ease-in-out 3s;
 ```
 
-```
+```css
 transition-property: transform;
 transition-duration: 1s;
 transition-timing-function: ease-in-out;
@@ -636,7 +634,7 @@ Trouver une transition intéressante sur codepen et l’implémenter sur votre s
 
 **Rem: on écrit animation dans ce qui la déclenche, PAS dans l’élément lui même (contraire de transition)**
 
-```
+```css
 .box {
   height: 200px;
   width: 400px;
@@ -685,7 +683,7 @@ Soit vous trouvez une animation qui vous plait sur codepen et vous la modifiez p
 ### Pseudo classes
 
 Une pseudo-classe est un mot-clé qui peut être ajouté à un sélecteur afin d'indiquer l'état spécifique dans lequel l'élément doit être pour être ciblé par la déclaration.
-```
+```css
 selector:pseudo-class {
   property: value;
 }
@@ -694,17 +692,18 @@ selector:pseudo-class {
 
 
 **Ex:**
-        - :link		cible un lien non visité
-        - :visited	cible un lien déjà visité
-        - :hover	cible un élément survolé par la souris
-        - :active	cible un élément activé par l'utilisateur. (permet de simuler un clic, "court")
-        - :focus	cible un élément dans le focus (permet de simuler un clic, "long")
+
+- :link		cible un lien non visité
+- :visited	cible un lien déjà visité
+- :hover	cible un élément survolé par la souris
+- :active	cible un élément activé par l'utilisateur. (permet de simuler un clic, "court")
+- :focus	cible un élément dans le focus (permet de simuler un clic, "long")
 
 ### Pseudo elements 
 
 Un pseudo-élément est un mot-clé ajouté à un sélecteur qui permet de mettre en forme certaines parties de l'élément ciblé par la règle.
 
-```
+```css
 selector::pseudo-element {
   property: value;
 }
@@ -712,15 +711,17 @@ selector::pseudo-element {
 [Source : ](https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-elements)
 
 **Ex:**
+
 - ::before	créée un pseudo élément avant le contenu de l'élément ciblé     (souvent combiné avec content)
 - ::after       créée un pseudo élément dernier le contenu de l'élément ciblé   (souvent combiné avec content)
+
 Ceux-ci sont les 2 plus utilisés, mais il en existe d'autres :
 
 - ::first-line 	cible la première ligne d'un élément
 - ::selection 	cible la portion du document sélectionnée par l'utilisateur
 - ect
 
-```
+```css
 div::before {
         content: "before";
 }
@@ -730,7 +731,7 @@ div::after {
 
 ```
 
-```
+```html
 <div>
 before
 <!-- reste du contenu de la div -->
@@ -741,25 +742,110 @@ after
 [Exemple codepen](https://codepen.io/Michamp/pen/VwQqXjV)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [Reference pour le css](https://cssreference.io/)
+
+## Qu'est-ce que Bootstrap?
+
+Bootstrap est essentiellement une librairie CSS (il y a un peu JavaScript aussi).
+
+Qu'est-ce qu'une librairie CSS ?
+
+C'est un ensemble de classes pré-écrites permettant une mise en page rapide au moyen de styles prédéfinis.
+
+[Site de Bootstrap :](https://getbootstrap.com/) 
+
+Exemples d'autres librairies CSS : Tailwind, Materialize, etc. 
+
+```html
+<button>Click</button>
+```
+
+![bouton bootstrap](./assets/bootstrapbtn.png "bootstrap bouton")
+
+```html
+<button type="button" class="btn btn-primary">Click</button>
+```
+[bootstrap button](https://getbootstrap.com/docs/5.2/components/buttons/)
+
+[Quick start](https://getbootstrap.com/docs/5.3/getting-started/introduction/#quick-start)
+
+### Installer Bootstrap
+
+- le télécharger puis l’inclure via la balise link, comme d’habitude :
+
+```html
+<link rel="stylesheet" href="bootstrap.css">
+```
+
+**Ou**
+
+- l’inclure directement via un CDN :
+
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHF+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+```
+
+**Les avantage de Bootstrap**
+
+- Une multitudes d’objets pré-stylisés
+- Un système de layout facile à utiliser, et responsive
+- Permet de rapidement obtenir une version propre
+- Librairie personnalisable
+
+**Les inconvenients de Bootstrap**
+
+- Dès qu'on commence à ajouter notre propre CSS, surviennent facilement des conflits entre les 2, conflits presque insolvables vu le temps qui serait nécessaire pour les résoudre.
+
+- Autrement dit : dès qu'on s'éloigne trop des fonctionnalités Bootstrap, il devient difficile de progresser.
+
+- Au pire on peut n'utiliser que des parties de Bootstrap (cf le fichier téléchargé)
+
+
+### Exercice 
+
+Faire une copie de votre site actuel, puis sur cette copie faire ceci :
+
+Mettre un carousel Bootstrap comme première section de votre site, juste en dessous de la navbar.
+Ensuite changer les cartes de votre site par des cartes Bootstrap.
+Eventuellement changer la navbar par une navbar Bootstrap
+
+(Note: la copie permet juste de garder votre ancienne version, faite manuellement, car avec Bootstrap le code va beaucoup changer.)
+
+[Documentation : ](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+
+
+![Grid Bootstrap](./assets/bootstrapgrid.png "Css grid de bootstrap")
+
+**Grid bootstrap responsive :**
+
+
+```html
+<div class="container">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+
+  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+  <div class="row">
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+
+  <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="row">
+    <div class="col-6">.col-6</div>
+    <div class="col-6">.col-6</div>
+  </div>
+</div>
+
+```
+[Source](https://getbootstrap.com/docs/5.2/layout/grid/#mix-and-match)
+
+### Exercice
+
+Affichez vos cartes de manière responsive en utilisant la grid bootstrap
