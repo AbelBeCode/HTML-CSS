@@ -71,13 +71,44 @@ il nous permet de définir les diffèrent bloc de notre page web.
 ### Exemple css
 Voici une page html sans css : 
 
-![html sans css](./assets/html-no-css.png "html sans css")
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p>Hello World !</p>
+</body>
+</html>
+```
 
 Voici une page html avec css :
 
-![html avec css](./assets/html-yes-css.png "html avec css")
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello World !</p>
+</body>
+</html>
+```
 
-![paragraphe rouge](./assets/p-css.png "paragraphe coloré avec du css")
+```css
+p{
+        color:red;
+}
+```
 
 ## Exercice :
 
