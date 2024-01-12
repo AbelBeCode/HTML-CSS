@@ -58,7 +58,7 @@
 
 ## Exercice :
 
-- Inspectez la page d'accueil de Wikipedia d'un personnage publique et modifiez:
+- Inspectez la page d'accueil de Wikipedia d'un personnage publique et modifiez :
 - La balise head et son contenu
 - La balise body et son contenu
 - 3 balises quelconques pour lesquelles vous modifierez les attributs et contenu
@@ -101,6 +101,7 @@ Voici une page html avec css :
 </html>
 ```
 
+
 ```css
 p{
         color:red;
@@ -142,17 +143,17 @@ Chaque élément HTML est affiché en considérant le modèle suivant :
 - Les propriétés width et height vont nous permettre de
   définir la largeur et la hauteur de la boite « contenu »
 - La propriété padding va nous permettre de définir la taille des marges internes
-  Important : le background ne s’applique QUE dans le padding!
+  Important : le background ne s'applique QUE dans le padding!
 - La propriété margin va nous permettre de définir la taille des marges externes.
   Rem: la propriété margin varie entre deux éléments similaires
-- display est une propriété très puissante puisqu’elle va nous permettre de modifier
-  la façon dont un élément va s’afficher dans la page : en ligne, sous forme de bloc, etc.
+- display est une propriété très puissante puisqu'elle va nous permettre de modifier
+  la façon dont un élément va s'afficher dans la page : en ligne, sous forme de bloc, etc.
   et donc la façon dont il va se comporter avec ses voisins:
   inline : Les éléments de type inline vont venir essayer de se placer en ligne…,
   block : Un élément de type block va toujours prendre toute la largeur disponible au sein de son
   élément parent. Un élément de type block va toujours « aller à la ligne »
-  Un élément de type block peut contenir d’autres éléments de type block ou de type inline
-  Un élément de type inline ne peut pas contenir d’éléments de type block
+  Un élément de type block peut contenir d'autres éléments de type block ou de type inline
+  Un élément de type inline ne peut pas contenir d'éléments de type block
 
 ### Les propriétés CSS liées aux différentes conteneurs
 
@@ -162,11 +163,11 @@ Chaque élément HTML est affiché en considérant le modèle suivant :
 - La propriété border va nous permettre de définir des bordures pour notre élément
 - La propriété margin va nous permettre de définir la taille des marges externes.
   **remarque : la propriété margin varie entre deux éléments similaires**
-- La propriété box-sizing: border-box indique que l’on souhaite inclure les marges internes et les bordures dans le calcul de la taille d’un élément.
-- La propriété display va nous permettre de définir un type d’affichage pour un élément
-- display est une propriété très puissante puisqu’elle va nous permettre de modifier la façon dont un élément va s’afficher dans la page : en ligne, sous forme de bloc, etc. et donc la façon dont il va se comporter avec ses voisins
-- Les éléments de type inline vont venir essayer de se placer en ligne , Un élément de type inline ne va occuper que la largeur nécessaire à l’affichage de son contenu par défaut.
-- Un élément de type block va toujours prendre toute la largeur disponible au sein de son élément parent. Un élément de type block va toujours « aller à la ligne » , Un élément de type block peut contenir d’autres éléments de type block ou de type inline
+- La propriété box-sizing: border-box indique que l'on souhaite inclure les marges internes et les bordures dans le calcul de la taille d'un élément.
+- La propriété display va nous permettre de définir un type d'affichage pour un élément
+- display est une propriété très puissante puisqu'elle va nous permettre de modifier la façon dont un élément va s'afficher dans la page : en ligne, sous forme de bloc, etc. et donc la façon dont il va se comporter avec ses voisins
+- Les éléments de type inline vont venir essayer de se placer en ligne , Un élément de type inline ne va occuper que la largeur nécessaire à l'affichage de son contenu par défaut.
+- Un élément de type block va toujours prendre toute la largeur disponible au sein de son élément parent. Un élément de type block va toujours « aller à la ligne » , Un élément de type block peut contenir d'autres éléments de type block ou de type inline
 
 ### Pour resumer :
 
@@ -238,7 +239,7 @@ https://developer.mozilla.org/fr/docs/Web/CSS
 
 Note: Mozilla MDN Web Docs peut être affiché en français
 
-N’hésitez pas à Googler ou chercher directement sur Youtube des mots clés
+N'hésitez pas à Googler ou chercher directement sur Youtube des mots clés
 
 ## 5.Sélecteurs CSS : introduction
 
@@ -282,7 +283,7 @@ p {
 }
 ```
 
-- Pseudo sélecteur de survol d’un élément
+- Pseudo sélecteur de survol d'un élément
 
 ```css
 p:hover{
@@ -306,12 +307,12 @@ Repondre au question ecrit en commentaire dans le bloc CSS : [exercices](https:/
 - La propriété position va nous permettre de de définir un type de positionnement
   La valeur static est la valeur par défaut de la propriété position.
   Un élément HTML positionné avec position : static sera positionné selon le flux normal de la page.
-- les propriétés top, left, bottom et right n’auront aucun effet sur les éléments positionnés avec position : static.
-- Attribuer une position : relative à un élément va positionner l’élément dans le flux normal de la page tout comme position : static.
+- les propriétés top, left, bottom et right n'auront aucun effet sur les éléments positionnés avec position : static.
+- Attribuer une position : relative à un élément va positionner l'élément dans le flux normal de la page tout comme position : static.
   position : relative va ensuite pouvoir être décalé par rapport à sa position initiale grâce aux propriétés top, left, bottom et right.
 - Un élément positionné avec position: absolute va être positionné par rapport à son parent le plus proche positionné.
-  Le point de référence pour les propriétés top, left, bottom et right va ainsi être le côté de l’élément parent.Un élément positionné avec position: absolute va ainsi pouvoir se placer par-dessus d’autres éléments.
-  *La seule différence entre position: fixed et position: absolute est que l’élément ne va plus être positionné par rapport à son parent le plus proche mais par rapport au viewport, c’est-à-dire par rapport à la fenêtre visible*
+  Le point de référence pour les propriétés top, left, bottom et right va ainsi être le côté de l'élément parent.Un élément positionné avec position: absolute va ainsi pouvoir se placer par-dessus d'autres éléments.
+  *La seule différence entre position: fixed et position: absolute est que l'élément ne va plus être positionné par rapport à son parent le plus proche mais par rapport au viewport, c'est-à-dire par rapport à la fenêtre visible*
 
 **resumer**
 
@@ -319,11 +320,11 @@ Repondre au question ecrit en commentaire dans le bloc CSS : [exercices](https:/
 
 - static : propriété par défaut, ne change rien
 - relative : comportement par défaut identique à static on peut modifier : top, left, right, bottom
-  déplace l’élément “au dessus” des autres
-- absolute : enlève l’élément de sa position normale le reste s’affiche comme si l’élément n’était pas là
+  déplace l'élément "au dessus" des autres
+- absolute : enlève l'élément de sa position normale le reste s'affiche comme si l'élément n'était pas là
   top, left, right, bottom sont relatifs au parent (html par défaut)
-- fixed : colle l’élément au viewport ,on positionne avec top, left, right, bottom
-- sticky : comportement par défaut identique à relative ,dès qu’on scrolle cela se transforme en fixed
+- fixed : colle l'élément au viewport ,on positionne avec top, left, right, bottom
+- sticky : comportement par défaut identique à relative ,dès qu'on scrolle cela se transforme en fixed
 
 [liste des positions avec un exemple :](https://codepen.io/Michamp/pen/PoQBQYY)
 
@@ -333,10 +334,10 @@ Repondre au question ecrit en commentaire dans le bloc CSS : [exercices](https:/
 
 ![Exercices](./assets/exo3.png "Exercices a realisé")
 
-[Exemple à completer](https://codepen.io/Michamp/pen/JjpBpbe)
+[Exemple à completer](https://codepen.io/Yassine-Sekri/pen/BabQoMb)
 *Collez le code html , css dans les fichier respectif sur vscode pour vous simplifier la vie*
 
-[Correction](https://codepen.io/Michamp/pen/xxYJYRy)
+[Correction](https://codepen.io/Yassine-Sekri/pen/MWxbaRy)
 
 ## Grid et Flex
 
@@ -358,20 +359,20 @@ Repondre au question ecrit en commentaire dans le bloc CSS : [exercices](https:/
   [Guide complet du Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
   [Video Grid](https://www.youtube.com/watch?v=EiNiSFIPIQE)
 
-## 6.Qu’est-ce que le responsive ?
+## 6.Qu'est-ce que le responsive ?
 
-Une page responsive est simplement une page HTML qui s’affiche correctement sur tous les types d’écrans :
+Une page responsive est simplement une page HTML qui s'affiche correctement sur tous les types d'écrans :
 
 - Ordinateur de bureau
 - téléphone
 - tablette
 - montre connectée
 
-Ce n’est pas une partie fixe et définie du CSS, comme flexbox, grid, etc. mais un ensemble de techniques utilisées dans l’objectif d’un bon affichage sur tout type d’écran. Ex:  burger menu
+Ce n'est pas une partie fixe et définie du CSS, comme flexbox, grid, etc. mais un ensemble de techniques utilisées dans l'objectif d'un bon affichage sur tout type d'écran. Ex:  burger menu
 
 ### Exercice :
 
-Analyser, comparer les 2 versions desktop et mobile d'un site avec l’inspecteur. Que voyez-vous ?
+Analyser, comparer les 2 versions desktop et mobile d'un site avec l'inspecteur. Que voyez-vous ?
 
 ![Inspecter selectionnant le type d'ecran](./assets/responsive-inspector.png "inspecteur navigation responsive")
 
@@ -383,7 +384,7 @@ Analyser, comparer les 2 versions desktop et mobile d'un site avec l’inspecteu
 
 Cete balise nous aidera pour une bonne visibilité du contenu du site :
 
-width=device-width :  force la largeur de l’écran à faire tout le viewport, évite des bugs d’affichages sur petits écrans
+width=device-width :  force la largeur de l'écran à faire tout le viewport, évite des bugs d'affichages sur petits écrans
 
 initial-scale=1 : force le zoom à être de 100% au chargement de la page
 
@@ -407,11 +408,11 @@ Dans cet exemple nous avons :
 
 ### Exercices
 
-Reprendre le code avec les cartes et le rendre responsive au sens que l’on vient de voir : accorder une taille variable avec une largeur minimum et maximum aux cartes
+Reprendre le code avec les cartes et le rendre responsive au sens que l'on vient de voir : accorder une taille variable avec une largeur minimum et maximum aux cartes
 
 [Codepen avec les cartes : ](https://codepen.io/Michamp/pen/xxYJYRy)
 
-*Note:  vous pouvez refaire l’exercice de zéro avec des cartes à vous.*
+*Note:  vous pouvez refaire l'exercice de zéro avec des cartes à vous.*
 
 ## responsive fonts
 
@@ -422,9 +423,9 @@ font-size: min(3vw, 35px);
 ```
 
 - l'unité de mesure rem :
-  Il existe une unité de longueur qui est la taille de la police dans l’élément html, c’est rem.
-  Utile pour l’accessibilité :  modifier la taille des polices (méthode de 62.5%) => exemple
-  Peut être utilisé pour dimensionner autre chose qu’une police
+  Il existe une unité de longueur qui est la taille de la police dans l'élément html, c'est rem.
+  Utile pour l'accessibilité :  modifier la taille des polices (méthode de 62.5%) => exemple
+  Peut être utilisé pour dimensionner autre chose qu'une police
   note : par défaut html possède une font-size de 16px
   Utile dans les media queries : changer la font-size de html en pourcentage (voir plus loin)
   ex:
@@ -442,9 +443,9 @@ html {
 ```
 
 - l'unité de mesure em :
-  L’unité em fait référence à la taille de la police du parent
-  Si aucun parent n’a de taille de font définie alors 1em vaudra la taille de l'élément root, donc 16px
-  Peut être utilisé pour dimensionner autre chose qu’une police
+  L'unité em fait référence à la taille de la police du parent
+  Si aucun parent n'a de taille de font définie alors 1em vaudra la taille de l'élément root, donc 16px
+  Peut être utilisé pour dimensionner autre chose qu'une police
   pratique pour dimensionner la police de tout une portion du site, typiquement une section, pour laquelle la taille sera définie puis héritée par tous ses enfants
 
 ```css
@@ -458,10 +459,10 @@ html {
 ```
 
 - media queries
-  Il existe en CSS des propriétés appelées média queries qui permettent de changer le CSS en fonction (entre autres) de la largeur de l’écran
+  Il existe en CSS des propriétés appelées média queries qui permettent de changer le CSS en fonction (entre autres) de la largeur de l'écran
 
 ```css
-/* Si la largeur est entre 600px et 900px OU au dessus de 1100px - changer l’apparence de la div */
+/* Si la largeur est entre 600px et 900px OU au dessus de 1100px - changer l'apparence de la div */
 @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
         div.example {
         font-size: 50px;
@@ -489,7 +490,7 @@ https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-stan
 
 ### Utiliser flexbox dans un media queries
 
-Comme on l’a vu, flexbox permet de facilement aligner des éléments en rangées ou colonnes. On peut l’utiliser pour facilement passer d’un alignement en rangées à un alignement en colonnes en utilisant une media query.
+Comme on l'a vu, flexbox permet de facilement aligner des éléments en rangées ou colonnes. On peut l'utiliser pour facilement passer d'un alignement en rangées à un alignement en colonnes en utilisant une media query.
 
 ```css
 .container {
@@ -527,14 +528,12 @@ color:  hsla(255, 12, 67, 0.4);
 
 ```
 
-[Exemple transparence](https://codepen.io/Michamp/pen/ExQdeRy)
-
 [Liste couleurs nommées prédéfinies](https://www.w3schools.com/colors/colors_names.asp)
 
 ### Les gradient / dégradé
 
-Les gradients permettent d’afficher un dégradé de couleurs en arrière-plan.
-Un léger gradient change beaucoup l’aspect général d’une page (fait moins amateur, comme la présence de petits border-radius).
+Les gradients permettent d'afficher un dégradé de couleurs en arrière-plan.
+Un léger gradient change beaucoup l'aspect général d'une page (fait moins amateur, comme la présence de petits border-radius).
 
 Exemple :
 
@@ -549,23 +548,23 @@ Quelque site sympas pour les couleurs et dégradés
 - [generateur de dégradé](https://www.colorzilla.com/gradient-editor/)
 - [generateur d&#39;effet vitrine](https://css.glass/)
 
-### Mettre une image en background d’un container
+### Mettre une image en background d'un container
 
 propriétés importantes :
 
-- background-image : source de l’image
-- background-repeat : définit s’il faut répéter l’image sur les parties qui dépassent
-- background-size : spécifie comment insérer l’image dans le container => MDN
+- background-image : source de l'image
+- background-repeat : définit s'il faut répéter l'image sur les parties qui dépassent
+- background-size : spécifie comment insérer l'image dans le container => MDN
 
-**Rem : mettre une image en backgound d’une div est souvent plus facile pour manipuler les images sur une page. On déforme les dimensions de la div mais PAS celles de l’image.**
+**Rem : mettre une image en backgound d'une div est souvent plus facile pour manipuler les images sur une page. On déforme les dimensions de la div mais PAS celles de l'image.**
 
 [Exemple](https://codepen.io/Michamp/pen/LYQgoKX)
 
 ### Exercice
 
-Rajouter dans votre projet d’hier :
+Rajouter dans votre projet d'hier :
 des couleurs avec transparence
-au moins un gradient (très léger c’est ok)
+au moins un gradient (très léger c'est ok)
 une ou des images en background de certains éléments (ex: body, carte, section, header…)
 
 ## Les transitions et animations CSS
@@ -592,7 +591,7 @@ une ou des images en background de certains éléments (ex: body, carte, section
 }
 ```
 
-**Rem: on écrit transition dans l’élément qui la subit, PAS dans ce qui la déclenche (pas dans le :hover)**
+**Rem: on écrit transition dans l'élément qui la subit, PAS dans ce qui la déclenche (pas dans le :hover)**
 
 [pseudo classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
 
@@ -615,13 +614,13 @@ transition-delay: 3s;
 
 ### Exercice
 
-Trouver une transition intéressante sur codepen et l’implémenter sur votre site
+Trouver une transition intéressante sur codepen et l'implémenter sur votre site
 
 ### animations CSS
 
 [Changer le background color avec une animation : ](https://codepen.io/Michamp/pen/RwQezXo)
 
-**Rem: on écrit animation dans ce qui la déclenche, PAS dans l’élément lui même (contraire de transition)**
+**Rem: on écrit animation dans ce qui la déclenche, PAS dans l'élément lui même (contraire de transition)**
 
 ```css
 .box {
@@ -650,11 +649,11 @@ Trouver une transition intéressante sur codepen et l’implémenter sur votre s
 }
 ```
 
-- animation-name : le nom que l’on donne à l’animation
+- animation-name : le nom que l'on donne à l'animation
 - animation-duration : sa durée
 - animation-iteration-count : le nombre de répétition (ex: 3, infinite)
 - animation-timing-function : la fonction de easing (ex: ease-in-out )
-- animation-fill-mode : spécifie le comportement avant ou après l’animation (ex: forwards)
+- animation-fill-mode : spécifie le comportement avant ou après l'animation (ex: forwards)
 - animation-direction : spécifie le comportement entre 2 cycles (ex: alternate)
 
 [Animations w3school](https://www.w3schools.com/css/css3_animations.asp)
@@ -665,7 +664,7 @@ Trouver une transition intéressante sur codepen et l’implémenter sur votre s
 
 Implémentez au moins une animation dans votre site.
 
-Soit vous l’inventez vous même, de A à Z.
+Soit vous l'inventez vous même, de A à Z.
 Soit vous trouvez une animation qui vous plait sur codepen et vous la modifiez pour en faire quelque chose de vraiment personnel
 
 ### Pseudo classes
@@ -761,7 +760,7 @@ Exemples d'autres librairies CSS : Tailwind, Materialize, etc.
 
 ### Installer Bootstrap
 
-- le télécharger puis l’inclure via la balise link, comme d’habitude :
+- le télécharger puis l'inclure via la balise link, comme d'habitude :
 
 ```html
 <link rel="stylesheet" href="bootstrap.css">
@@ -769,7 +768,7 @@ Exemples d'autres librairies CSS : Tailwind, Materialize, etc.
 
 **Ou**
 
-- l’inclure directement via un CDN :
+- l'inclure directement via un CDN :
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHF+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -779,7 +778,7 @@ Exemples d'autres librairies CSS : Tailwind, Materialize, etc.
 
 **Les avantage de Bootstrap**
 
-- Une multitudes d’objets pré-stylisés
+- Une multitudes d'objets pré-stylisés
 - Un système de layout facile à utiliser, et responsive
 - Permet de rapidement obtenir une version propre
 - Librairie personnalisable
