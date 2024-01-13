@@ -1,25 +1,25 @@
 # HTML - CSS
 
-## 1.Presentation et objectif de ses 5 jours
+## 1.Présentation et objectif de ses 5 jours
 
 - Qui suis-je
 - Qui êtes vous ?
 - Quel est votre niveau informatique ?
 - Ce que vous attendez de la formation
 
-## 2.Presentation des outils et installation
+## 2.Présentation des outils et installation
 
-- VS code : [Téléchargement](https://code.visualstudio.com/).
-  vs code est ce que l'on appelle un IDE ( intégrated developement environement )
-  c'est un outil de traitement de texte et de code qui nous facilite la création de site web,
-  application et bien d'autre.
+- VS Code : [Téléchargement](https://code.visualstudio.com/).
+  Visual Studio Code est ce que l'on appelle un IDE ( Intégrated Developement Environement )
+  C'est un outil de traitement de texte et de code qui nous facilite la création de sites web,
+  applications et bien d'autres.
 - Inspecteur du navigateur
-  l'inspecteur est un outils présent dans tout les navigateur(Firefox, Opera,
+  l'inspecteur est un outils présent dans tout les navigateurs (Firefox, Opera,
   Edge, Chrome, ..)
-  C'est un outils indispensable pour les développeur web , il permet :
-  d'identifier des erreurs, des comportement voir même la vitesse/réactivité de notre page web
+  C'est un outil indispensable pour les développeurs web , il permet :
+  d'identifier des erreurs, des comportements, voire même la vitesse/réactivité de notre page web
 - Un dossier vide
-  Aussi simple que cela puisse paraitre tout les site internet
+  Aussi simple que cela puisse paraitre tous les sites internet
   commencent dans un dossier vide, c'est ce que nous allons faire
   avec notre première page html qui devrais ressembler a quelque chose comme ça :
   [Premiere page web](http://info.cern.ch/hypertext/WWW/TheProject.html)
@@ -27,8 +27,8 @@
 ## 3. Un peu de théorie
 
 - Le HTML ?
-  Le html est un langage dit de balisage (dit descriptif de donnée)
-  il nous permet de définir les diffèrent bloc de notre page web.
+  Le HTML (HyperText Markup Language) est un langage dit "de balisage" (dit descriptif de données)
+  Il nous permet de définir les diffèrents blocs de notre page web.
 
 ```html
 <p> Ceci est un paragraphe </p>
@@ -37,13 +37,13 @@
 <img src="http://www.image.com/image.png">
 ```
 
-- La balise en detaille.
+- La balise en détail.
 
 ```html
 <tag attribute="value">contenu</tag>
 ```
 
-- Et voici la structure indispensable a une page web.
+- Et voici la structure indispensable à une page web.
 
 ```html
 <html>
@@ -58,15 +58,15 @@
 
 ## Exercice :
 
-- Inspectez la page d'accueil de Wikipedia d'un personnage publique et modifiez :
+- Inspectez la page d'accueil de Wikipedia d'un personnage public et modifiez :
 - La balise head et son contenu
 - La balise body et son contenu
 - 3 balises quelconques pour lesquelles vous modifierez les attributs et contenu
-- Pour finir modifiez une partie du css de ses derniers
+- Pour finir, modifiez une partie du CSS de ses derniers
 
-### Exemple css
+### Exemple CSS
 
-Voici une page html sans css :
+Voici une page HTML sans CSS :
 
 ```html
 <!DOCTYPE html>
@@ -111,10 +111,10 @@ p{
 ## Exercice :
 
 - Créez une page html
-- Ajouter votre nom et prenom en titre principale
+- Ajoutez votre nom et prénom en titre principale
 - Ajoutez une photo miniature et un lien vers la photo initiale
-- Ajoutez 3 sections avec un titre secondaire ( mon experience , mes compétences , ma formation ) [ chaque section contient un paragraphe ou une liste à puce]
-- Ajoutez different titre , chacun ayant une taille differente
+- Ajoutez 3 sections avec un titre secondaire ( mon expérience , mes compétences , ma formation ) [ chaque section contient un paragraphe ou une liste à puce]
+- Ajoutez différents titres, chacun ayant une taille différente
 
 [Exemple](codepen.io/Michamp/pen/LYQrPPv "codepen ")
 
@@ -138,38 +138,38 @@ Chaque élément HTML est affiché en considérant le modèle suivant :
 
 ![bordure , marge internet/externe](./assets/mar-pad-bor.png "bordure , marge interne/externe")
 
-### Propriété css fréquemment rencontrées :
+### Propriétés CSS fréquemment rencontrées :
 
-- Les propriétés width et height vont nous permettre de
+- Les propriétés "width" et "height" vont nous permettre de
   définir la largeur et la hauteur de la boite « contenu »
-- La propriété padding va nous permettre de définir la taille des marges internes
+- La propriété "padding" va nous permettre de définir la taille des marges internes
   Important : le background ne s'applique QUE dans le padding!
-- La propriété margin va nous permettre de définir la taille des marges externes.
+- La propriété "margin" va nous permettre de définir la taille des marges externes.
   Rem: la propriété margin varie entre deux éléments similaires
-- display est une propriété très puissante puisqu'elle va nous permettre de modifier
+- "display" est une propriété très puissante puisqu'elle va nous permettre de modifier
   la façon dont un élément va s'afficher dans la page : en ligne, sous forme de bloc, etc.
   et donc la façon dont il va se comporter avec ses voisins:
-  inline : Les éléments de type inline vont venir essayer de se placer en ligne…,
-  block : Un élément de type block va toujours prendre toute la largeur disponible au sein de son
+  "inline" : Les éléments de type inline vont venir essayer de se placer en ligne…,
+  "block" : Un élément de type block va toujours prendre toute la largeur disponible au sein de son
   élément parent. Un élément de type block va toujours « aller à la ligne »
   Un élément de type block peut contenir d'autres éléments de type block ou de type inline
   Un élément de type inline ne peut pas contenir d'éléments de type block
 
 ### Les propriétés CSS liées aux différentes conteneurs
 
-- Les propriétés width et height vont nous permettre de définir la largeur et la hauteur de la boite « contenu »
-- La propriété padding va nous permettre de définir la taille des marges internes
+- Les propriétés "width" et "height" vont nous permettre de définir la largeur et la hauteur de la boite « contenu »
+- La propriété "padding" va nous permettre de définir la taille des marges internes
   **remarque : le background ne s'applique QUE dans le padding!**
-- La propriété border va nous permettre de définir des bordures pour notre élément
-- La propriété margin va nous permettre de définir la taille des marges externes.
+- La propriété "border" va nous permettre de définir des bordures pour notre élément
+- La propriété "margin" va nous permettre de définir la taille des marges externes.
   **remarque : la propriété margin varie entre deux éléments similaires**
-- La propriété box-sizing: border-box indique que l'on souhaite inclure les marges internes et les bordures dans le calcul de la taille d'un élément.
-- La propriété display va nous permettre de définir un type d'affichage pour un élément
+- La propriété "box-sizing": border-box indique que l'on souhaite inclure les marges internes et les bordures dans le calcul de la taille d'un élément.
+- La propriété "display" va nous permettre de définir un type d'affichage pour un élément
 - display est une propriété très puissante puisqu'elle va nous permettre de modifier la façon dont un élément va s'afficher dans la page : en ligne, sous forme de bloc, etc. et donc la façon dont il va se comporter avec ses voisins
 - Les éléments de type inline vont venir essayer de se placer en ligne , Un élément de type inline ne va occuper que la largeur nécessaire à l'affichage de son contenu par défaut.
 - Un élément de type block va toujours prendre toute la largeur disponible au sein de son élément parent. Un élément de type block va toujours « aller à la ligne » , Un élément de type block peut contenir d'autres éléments de type block ou de type inline
 
-### Pour resumer :
+### Pour résumer :
 
 **propriété display**
 
@@ -192,7 +192,7 @@ Chaque élément HTML est affiché en considérant le modèle suivant :
 
 ## Exercice
 
-- Realisez la maquette suivant en respectant les indication de box model indiquées ( certaines sont incomplètes )
+- Réalisez la maquette suivante en respectant les indications de box model indiquées ( certaines sont incomplètes )
 
 ![structure exercices](./assets/exo2.png "structure exercices")
 
@@ -209,7 +209,7 @@ Chaque élément HTML est affiché en considérant le modèle suivant :
 
 ```
 
-### Liste des proprièté CSS
+### Liste des propriètés CSS
 
 ```css
 display
@@ -223,7 +223,7 @@ height
 box-sizing
 ```
 
-Ref pour les differentes balises et proprieté css :
+Ref pour les differentes balises et proprietés CSS :
 
 - HTML:
   https://www.w3schools.com/tags/default.asp
@@ -239,7 +239,7 @@ https://developer.mozilla.org/fr/docs/Web/CSS
 
 Note: Mozilla MDN Web Docs peut être affiché en français
 
-N'hésitez pas à Googler ou chercher directement sur Youtube des mots clés
+N'hésitez pas à Googler ou chercher directement sur Youtube des mots-clés
 
 ## 5.Sélecteurs CSS : introduction
 
@@ -294,7 +294,7 @@ p:hover{
 
 ## Exercices
 
-Repondre au question ecrit en commentaire dans le bloc CSS : [exercices](https://codepen.io/Michamp/pen/XWZBVxa)
+Répondre aux questions écrites en commentaire dans le bloc CSS : [exercices](https://codepen.io/Michamp/pen/XWZBVxa)
 
 ### Réferences
 
@@ -304,7 +304,7 @@ Repondre au question ecrit en commentaire dans le bloc CSS : [exercices](https:/
 
 ## Positionner un élément
 
-- La propriété position va nous permettre de de définir un type de positionnement
+- La propriété "position" va nous permettre de de définir un type de positionnement
   La valeur static est la valeur par défaut de la propriété position.
   Un élément HTML positionné avec position : static sera positionné selon le flux normal de la page.
 - les propriétés top, left, bottom et right n'auront aucun effet sur les éléments positionnés avec position : static.
@@ -314,7 +314,7 @@ Repondre au question ecrit en commentaire dans le bloc CSS : [exercices](https:/
   Le point de référence pour les propriétés top, left, bottom et right va ainsi être le côté de l'élément parent.Un élément positionné avec position: absolute va ainsi pouvoir se placer par-dessus d'autres éléments.
   *La seule différence entre position: fixed et position: absolute est que l'élément ne va plus être positionné par rapport à son parent le plus proche mais par rapport au viewport, c'est-à-dire par rapport à la fenêtre visible*
 
-**resumer**
+**Résumé**
 
 ### propriété position
 
@@ -324,7 +324,7 @@ Repondre au question ecrit en commentaire dans le bloc CSS : [exercices](https:/
 - absolute : enlève l'élément de sa position normale le reste s'affiche comme si l'élément n'était pas là
   top, left, right, bottom sont relatifs au parent (html par défaut)
 - fixed : colle l'élément au viewport ,on positionne avec top, left, right, bottom
-- sticky : comportement par défaut identique à relative ,dès qu'on scrolle cela se transforme en fixed
+- sticky : comportement par défaut identique à relative, dès qu'on scrolle cela se transforme en fixed
 
 [liste des positions avec un exemple :](https://codepen.io/Michamp/pen/PoQBQYY)
 
@@ -341,11 +341,11 @@ Repondre au question ecrit en commentaire dans le bloc CSS : [exercices](https:/
 
 ## Grid et Flex
 
-- Dans le developement front-end il y a 2 grande ecole de positionnement : Grid et Flex
-  ce sont deux façon de positionner les differents elements et groupe d'element sur sa page web
-  ce sont deux technique bien distincte qui ne font pas bon menage ensemble donc tester les deux
+- Dans le developement front-end, il y a 2 grandes écoles de positionnement : Grid et Flex
+  Ce sont deux façon de positionner les differents éléments et groupes d'éléments sur sa page web
+  Ce sont deux techniques bien distinctes qui ne font pas bon ménage ensemble, donc testez les deux
   et choisisez celui qui vous semble le plus logique !
-- Pour vous aider dans ce choix voici un exemple et 2 plateforme pour apprendre en jouant a un petit jeu de position
+- Pour vous aider dans ce choix, voici un exemple et 2 plateformes pour apprendre en jouant a un petit jeu de position
 
   [Exemple du grid et du flex ](https://codepen.io/Michamp/pen/KKQBQXv)
 
@@ -382,7 +382,7 @@ Analyser, comparer les 2 versions desktop et mobile d'un site avec l'inspecteur.
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-Cete balise nous aidera pour une bonne visibilité du contenu du site :
+Cette balise nous aidera pour une bonne visibilité du contenu du site :
 
 width=device-width :  force la largeur de l'écran à faire tout le viewport, évite des bugs d'affichages sur petits écrans
 
@@ -459,7 +459,7 @@ html {
 ```
 
 - media queries
-  Il existe en CSS des propriétés appelées média queries qui permettent de changer le CSS en fonction (entre autres) de la largeur de l'écran
+  Il existe en CSS des propriétés appelées "média queries" qui permettent de changer le CSS en fonction (entre autres) de la largeur de l'écran
 
 ```css
 /* Si la largeur est entre 600px et 900px OU au dessus de 1100px - changer l'apparence de la div */
@@ -510,7 +510,7 @@ Comme on l'a vu, flexbox permet de facilement aligner des éléments en rangées
 
 ### Exercice
 
-Reprenons notre site avec les differentes cartes et rendons le responsive avec les technique vues plus haut ( media queries , flexbox/grid , max/min width/height )
+Reprenons notre site avec les différentes cartes et rendons le responsive avec les technique vues plus haut ( media queries , flexbox/grid , max/min width/height )
 
 ## Les couleurs et images
 
@@ -541,7 +541,7 @@ Exemple :
 background: linear-gradient(139deg, rgba(35,36,0,1) 0%, rgba(72,145,40,1) 14%, rgba(73,144,36,1) 34%, rgba(0,11,255,0.8561799719887955) 100%);
 ```
 
-Quelque site sympas pour les couleurs et dégradés
+Quelque sites sympas pour les couleurs et dégradés
 
 - [generateur de palette et outils de nuance de couleurs](https://coolors.co/)
 - [generateur de dégradé](https://cssgradient.io/)
@@ -651,7 +651,7 @@ Trouver une transition intéressante sur codepen et l'implémenter sur votre sit
 
 - animation-name : le nom que l'on donne à l'animation
 - animation-duration : sa durée
-- animation-iteration-count : le nombre de répétition (ex: 3, infinite)
+- animation-iteration-count : le nombre de répétitions (ex: 3, infinite)
 - animation-timing-function : la fonction de easing (ex: ease-in-out )
 - animation-fill-mode : spécifie le comportement avant ou après l'animation (ex: forwards)
 - animation-direction : spécifie le comportement entre 2 cycles (ex: alternate)
@@ -776,25 +776,25 @@ Exemples d'autres librairies CSS : Tailwind, Materialize, etc.
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 ```
 
-**Les avantage de Bootstrap**
+**Les avantages de Bootstrap**
 
 - Une multitudes d'objets pré-stylisés
 - Un système de layout facile à utiliser, et responsive
 - Permet de rapidement obtenir une version propre
 - Librairie personnalisable
 
-**Les inconvenients de Bootstrap**
+**Les inconvénients de Bootstrap**
 
 - Dès qu'on commence à ajouter notre propre CSS, surviennent facilement des conflits entre les 2, conflits presque insolvables vu le temps qui serait nécessaire pour les résoudre.
 - Autrement dit : dès qu'on s'éloigne trop des fonctionnalités Bootstrap, il devient difficile de progresser.
-- Au pire on peut n'utiliser que des parties de Bootstrap (cf le fichier téléchargé)
+- Au pire, on peut n'utiliser que des parties de Bootstrap (cf le fichier téléchargé)
 
 ### Exercice
 
 Faire une copie de votre site actuel, puis sur cette copie faire ceci :
 
 Mettre un carousel Bootstrap comme première section de votre site, juste en dessous de la navbar.
-Ensuite changer les cartes de votre site par des cartes Bootstrap.
+Ensuite, changer les cartes de votre site par des cartes Bootstrap.
 Eventuellement changer la navbar par une navbar Bootstrap
 
 (Note: la copie permet juste de garder votre ancienne version, faite manuellement, car avec Bootstrap le code va beaucoup changer.)
